@@ -2,8 +2,8 @@ My Joomla Toolbox
 =================
 
 
-Welcome to my joomla snippet collection, feel free to contribute !
-content:
-gitignore file for your joomla project
-sublime snippet for joomla
-sublime snippet for seblod
+Welcome to my joomla snippet collection, feel free to contribute !<br/>
+content:<br/>
+gitignore file for your joomla project<br/>
+sublime snippet for joomla<br/>
+sublime snippet for seblod<br/>
