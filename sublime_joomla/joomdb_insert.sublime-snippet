@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+// Get a db connection.
+\$db = JFactory::getDbo();
+ // Create a new query object.
+\$query = \$db->getQuery(true);
+ // Insert columns.
+\$columns = array('user_id', 'profile_key', 'profile_value', 'ordering');
+ // Insert values.
+\$values = array(1001, \$db->quote('custom.message'), \$db->quote('Inserting a record using insert()'), 1);
+ // Prepare the insert query.
+\$query
+    ->insert(\$db->quoteName('#__user_profiles'))
+    ->columns(\$db->quoteName(\$columns))
+    ->values(implode(',', \$values));
+ 
+// Set the query using our newly populated query object and execute it.
+\$db->setQuery(\$query);
+\$db->query();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>joomdb_insert</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
