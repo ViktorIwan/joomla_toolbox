@@ -1,11 +1,10 @@
-//Update to Joomla 3.2
-
 administrator/cache/*
 *.png
 *.jpg
 *.jpeg
 *.gif
 *.pdf
+*.jpa
 administrator/components/com_admin/*
 administrator/components/com_banners/*
 administrator/components/com_cache/*
@@ -378,3 +377,6 @@ joomla.xml
 templates/beez3/*
 images/*
 media/*
+.buildpath
+.project
+.settings/org.eclipse.php.core.prefs
